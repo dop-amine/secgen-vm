@@ -45,7 +45,12 @@ Enter public key of local machine.
 Git Clone SecGen & bundle install:
 
 ```
-cd /home/amine/SecGen
-git clone
+cd ~
+git clone https://github.com/cliffe/SecGen.git
+cd SecGen
 bundle install
 ```
+
+# Usage
+
+[SecGen Usage Guide](https://github.com/cliffe/SecGen/#usage)
