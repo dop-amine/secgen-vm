@@ -1,6 +1,6 @@
 # Overview
 
-Ansible Playbook to provision SecGen dependencies on Ubuntu 18.04 Server.
+Ansible Playbook to provision [SecGen](https://github.com/cliffe/SecGen/) dependencies on Ubuntu 18.04 Server.
 
 # Setup
 
