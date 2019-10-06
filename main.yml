@@ -1,0 +1,20 @@
+---
+- name: Provision virtual machine
+  hosts: all
+  become: true
+  gather_facts: false
+
+
+  vars_files:
+    - vars/vars.yml
+
+  tasks:
+
+    # Default Tasks
+    - import_tasks: tasks/python.yml
+    - import_tasks: tasks/update.yml
+    - import_tasks: tasks/timezone.yml
+    - import_tasks: tasks/packages.yml
+    - import_tasks: tasks/ssh.yml
+    - import_tasks: tasks/secgen.yml
+    - import_tasks: tasks/restart.yml

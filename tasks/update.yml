@@ -1,0 +1,5 @@
+---
+- name: Update and upgrade
+  shell: apt-get update ; DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq
+  args:
+    warn: no

@@ -1,0 +1,23 @@
+---
+- name: Install secgen dependencies
+  apt:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - ruby-dev
+    - zlib1g-dev
+    - liblzma-dev
+    - build-essential
+    - patch
+    - virtualbox
+    - ruby-bundler
+    - imagemagick
+    - libmagickwand-dev
+    - exiftool
+    - libpq-dev
+    - libcurl4-openssl-dev
+    - libxml2-dev
+    - graphviz
+    - graphviz-dev
+    - libpcap0.8-dev
+    - vagrant

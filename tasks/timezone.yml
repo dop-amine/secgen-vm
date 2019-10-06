@@ -1,0 +1,7 @@
+- name: Set timezone
+  command: timedatectl set-timezone {{ timezone }}
+
+- name: Install ntp
+  apt:
+    name: ntp
+    state: present
